@@ -25,13 +25,9 @@ Every agent in this library must meet the same quality bar:
 Each agent lives in a single `.md` file. Use this template:
 
 ```markdown
-# [Agent Name]
-
-> **Description:** [One sentence — what it does]
-
 ---
 name: [Agent Name]
-description: [Full description — 1-2 sentences. Used as the Copilot Studio agent description.]
+description: [Full description — 1-2 sentences. Used as the agent description field.]
 domain: [writing-communication | project-management | hr-people | productivity | finance | sales | it-ops | customer-success | strategy-executive | learning-development | esg | industry]
 vertical: [n/a | specific vertical]
 audience: [Primary audience — comma-separated roles]
@@ -43,6 +39,10 @@ tested: [yes | no]
 version: 1.0
 last_updated: YYYY-MM-DD
 ---
+
+# [Agent Name]
+
+> **Description:** [One sentence — what it does]
 
 ## Description
 
@@ -56,7 +56,7 @@ last_updated: YYYY-MM-DD
 
 ## Instructions
 
-*(Paste the full block below into the Instructions field in Copilot Studio.)*
+*(Paste the full block below into the **Instructions** field at [m365.cloud.microsoft/chat/agent/new](https://m365.cloud.microsoft/chat/agent/new).)*
 
 \```
 [Full instruction set — 7,500–8,000 characters]

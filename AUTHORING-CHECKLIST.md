@@ -11,13 +11,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for submission instructions and the direc
 Every agent file must follow this exact structure, in this order:
 
 ```
-# [Agent Name]
-
-> **Description:** [One sentence — what it does]
-
 ---
 [frontmatter block]
 ---
+
+# [Agent Name]
+
+> **Description:** [One sentence — what it does]
 
 ## Description
 
@@ -32,7 +32,7 @@ Every agent file must follow this exact structure, in this order:
 
 ## Instructions
 
-*(Paste the full block below into the Instructions field in Copilot Studio.)*
+*(Paste the full block below into the **Instructions** field at [m365.cloud.microsoft/chat/agent/new](https://m365.cloud.microsoft/chat/agent/new).)*
 
 ```
 [Full instruction set — 7,500–8,000 characters]
@@ -79,7 +79,7 @@ last_updated: [YYYY-MM-DD]
 **Notes on specific fields:**
 - `char_count`: count only the content inside the ``` instruction block, not the headings or surrounding file
 - `rai_reviewed`: mark `yes` only after completing the RAI review checklist below
-- `tested`: mark `yes` only after deploying in Copilot Studio and testing all conversation starters
+- `tested`: mark `yes` only after deploying via the built-in Agent Builder and testing all conversation starters
 - `domain`: use `industry` for vertical-specific agents; add a `vertical` value
 
 ---
@@ -212,7 +212,7 @@ Before marking `rai_reviewed: yes`, verify each item:
 
 Before marking `tested: yes`:
 
-1. Deploy the agent in Copilot Studio (test environment or personal tenant)
+1. Deploy the agent at [m365.cloud.microsoft/chat/agent/new](https://m365.cloud.microsoft/chat/agent/new) (or Copilot Studio for advanced configuration)
 2. Run all conversation starters exactly as written — verify each produces useful output without errors or hallucinations
 3. Test the "no input" path — what happens when the user types the agent name with no context
 4. Test one edge case from the EDGE CASES section
