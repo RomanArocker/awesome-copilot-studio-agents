@@ -41,13 +41,13 @@ Every agent in this library:
 
 ## How to Deploy Any Agent
 
-1. Go to [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) and sign in with your M365 account.
-2. Click **Create → New agent**.
-3. Enter the agent name and description from the table below.
-4. In the **Instructions** field, paste the full block from the relevant file.
-5. Add knowledge sources (SharePoint sites) where noted.
-6. Click **Publish → Microsoft 365 Copilot**.
-7. Users can then `@mention` the agent in Copilot Chat.
+1. Go to [m365.cloud.microsoft/chat/agent/new](https://m365.cloud.microsoft/chat/agent/new) — no separate tool needed, it's built into Microsoft 365 Copilot.
+2. Enter the **Name** and **Description** from the agent file's frontmatter.
+3. In the **Instructions** field, paste the full block from the `## Instructions` section of the relevant file.
+4. Add knowledge sources (SharePoint sites) where noted.
+5. Click **Create** — the agent is immediately available to `@mention` in Copilot Chat.
+
+> You can also create agents via [Copilot Studio](https://copilotstudio.microsoft.com) for advanced configuration (additional knowledge sources, actions, authentication). For instruction-only agents in this library, the built-in Agent Builder is sufficient.
 
 ---
 
